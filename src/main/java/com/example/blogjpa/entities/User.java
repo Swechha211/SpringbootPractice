@@ -24,7 +24,7 @@ public class User {
     @Column(name = "about", nullable =false, length = 500)
     private String about;
 
-    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();
 
 
