@@ -6,7 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class BlogJpaApplication {
+public class BlogJpaApplication  {
+
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
+
 
     public static void main(String[] args) {
         SpringApplication.run(BlogJpaApplication.class, args);
@@ -17,4 +21,9 @@ public class BlogJpaApplication {
         return new ModelMapper();
     }
 
+//    @Override
+//    public void run(String... args) throws Exception {
+//        System.out.println(this.passwordEncoder.encode("123a"));
+//
+//    }
 }
